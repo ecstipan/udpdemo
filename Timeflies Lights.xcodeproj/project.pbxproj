@@ -21,6 +21,10 @@
 		7370799C193BCB9C009D3133 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7370797E193BCB9C009D3133 /* UIKit.framework */; };
 		737079A4193BCB9C009D3133 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 737079A2193BCB9C009D3133 /* InfoPlist.strings */; };
 		737079A6193BCB9C009D3133 /* Timeflies_LightsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 737079A5193BCB9C009D3133 /* Timeflies_LightsTests.m */; };
+		73DBCF28194E1FF8003BE899 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 73DBCF27194E1FF8003BE899 /* GCDAsyncUdpSocket.m */; };
+		73DBCF29194E1FF8003BE899 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 73DBCF27194E1FF8003BE899 /* GCDAsyncUdpSocket.m */; };
+		73DBCF2B194E2B19003BE899 /* tm.png in Resources */ = {isa = PBXBuildFile; fileRef = 73DBCF2A194E2B19003BE899 /* tm.png */; };
+		73DBCF2C194E2B19003BE899 /* tm.png in Resources */ = {isa = PBXBuildFile; fileRef = 73DBCF2A194E2B19003BE899 /* tm.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,9 @@
 		737079A1193BCB9C009D3133 /* Timeflies LightsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Timeflies LightsTests-Info.plist"; sourceTree = "<group>"; };
 		737079A3193BCB9C009D3133 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		737079A5193BCB9C009D3133 /* Timeflies_LightsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Timeflies_LightsTests.m; sourceTree = "<group>"; };
+		73DBCF26194E1FF8003BE899 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = "Downloads/CocoaAsyncSocket-master/GCD/GCDAsyncUdpSocket.h"; sourceTree = "<group>"; };
+		73DBCF27194E1FF8003BE899 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = "Downloads/CocoaAsyncSocket-master/GCD/GCDAsyncUdpSocket.m"; sourceTree = "<group>"; };
+		73DBCF2A194E2B19003BE899 /* tm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tm.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +89,7 @@
 		7370796E193BCB9B009D3133 = {
 			isa = PBXGroup;
 			children = (
+				737079AF193BE602009D3133 /* UDP */,
 				73707980193BCB9C009D3133 /* Timeflies Lights */,
 				7370799F193BCB9C009D3133 /* Timeflies LightsTests */,
 				73707979193BCB9C009D3133 /* Frameworks */,
@@ -126,6 +134,7 @@
 		73707981193BCB9C009D3133 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				73DBCF2A194E2B19003BE899 /* tm.png */,
 				73707982193BCB9C009D3133 /* Timeflies Lights-Info.plist */,
 				73707983193BCB9C009D3133 /* InfoPlist.strings */,
 				73707986193BCB9C009D3133 /* main.m */,
@@ -150,6 +159,16 @@
 				737079A2193BCB9C009D3133 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		737079AF193BE602009D3133 /* UDP */ = {
+			isa = PBXGroup;
+			children = (
+				73DBCF26194E1FF8003BE899 /* GCDAsyncUdpSocket.h */,
+				73DBCF27194E1FF8003BE899 /* GCDAsyncUdpSocket.m */,
+			);
+			name = UDP;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +250,7 @@
 			files = (
 				73707993193BCB9C009D3133 /* Images.xcassets in Resources */,
 				73707985193BCB9C009D3133 /* InfoPlist.strings in Resources */,
+				73DBCF2B194E2B19003BE899 /* tm.png in Resources */,
 				7370798E193BCB9C009D3133 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73DBCF2C194E2B19003BE899 /* tm.png in Resources */,
 				737079A4193BCB9C009D3133 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73DBCF28194E1FF8003BE899 /* GCDAsyncUdpSocket.m in Sources */,
 				7370798B193BCB9C009D3133 /* tmlAppDelegate.m in Sources */,
 				73707987193BCB9C009D3133 /* main.m in Sources */,
 				73707991193BCB9C009D3133 /* tmlViewController.m in Sources */,
@@ -260,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73DBCF29194E1FF8003BE899 /* GCDAsyncUdpSocket.m in Sources */,
 				737079A6193BCB9C009D3133 /* Timeflies_LightsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,6 +480,7 @@
 				737079AB193BCB9C009D3133 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		737079AC193BCB9C009D3133 /* Build configuration list for PBXNativeTarget "Timeflies LightsTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +489,7 @@
 				737079AE193BCB9C009D3133 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
