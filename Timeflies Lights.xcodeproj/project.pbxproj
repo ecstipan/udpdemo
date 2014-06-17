@@ -120,6 +120,7 @@
 		73707980193BCB9C009D3133 /* Timeflies Lights */ = {
 			isa = PBXGroup;
 			children = (
+				73DF2912194ECC67007C9504 /* iPad */,
 				73707989193BCB9C009D3133 /* tmlAppDelegate.h */,
 				7370798A193BCB9C009D3133 /* tmlAppDelegate.m */,
 				7370798C193BCB9C009D3133 /* Main.storyboard */,
@@ -171,6 +172,13 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		73DF2912194ECC67007C9504 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -219,6 +227,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Timeflies;
 				TargetAttributes = {
+					73707976193BCB9C009D3133 = {
+						DevelopmentTeam = HSAYDGFEVC;
+					};
 					73707997193BCB9C009D3133 = {
 						TestTargetID = 73707976193BCB9C009D3133;
 					};
@@ -400,10 +411,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Timeflies Lights/Timeflies Lights-Prefix.pch";
 				INFOPLIST_FILE = "Timeflies Lights/Timeflies Lights-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -413,10 +427,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Timeflies Lights/Timeflies Lights-Prefix.pch";
 				INFOPLIST_FILE = "Timeflies Lights/Timeflies Lights-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
